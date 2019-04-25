@@ -2,7 +2,7 @@
 
 port=$(lsof -ti tcp:3000);
 if [ ! -z $port ]
-then 
+then
   echo "Killing Server Process on tcp:3000"
   kill -9 ${port}
 fi
@@ -18,6 +18,3 @@ kill $SERVER_PID
 
 echo "EXIT $EXIT_CODE"
 (exit $EXIT_CODE)
-
-
-

@@ -15,10 +15,10 @@ async function request(path) {
 
 describe('Insights Service', () => {
   describe('/categories', () => {
-    context('it is yet to be implemented', () => {
+    context('Should ', () => {
       it('should return a 501 error', async () => {
         const response = await request('/categories');
-        response.statusCode.should.equal(501);
+        response.statusCode.should.equal(200);
       });
     });
   });
