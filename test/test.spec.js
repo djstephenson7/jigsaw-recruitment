@@ -8,7 +8,7 @@ async function request(path) {
     url: `http://localhost:3000/insights/${path}`,
     method: 'GET',
     json: true,
-    resolveWithFullResponse: true, // promise resolves with full response not just body. 
+    resolveWithFullResponse: true, // promise resolves with full response not just body.
     simple: false   // ensures promise resolves even if statusCode is not 200 series.
   });
 }
