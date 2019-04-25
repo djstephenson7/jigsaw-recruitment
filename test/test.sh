@@ -12,7 +12,7 @@ SERVER_PID=$!;
 echo "SERVER_PID: ${SERVER_PID}"
 
 
-./node_modules/.bin/mocha --reporter spec --exit ./test/*.spec.js
+./node_modules/.bin/mocha --reporter spec --exit ./test/**/*.spec.js
 EXIT_CODE=$?
 kill $SERVER_PID
 

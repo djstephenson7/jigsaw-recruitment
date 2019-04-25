@@ -1,3 +1,5 @@
+const url = 'https://transactions.spokedev.xyz/transactions';
+
 async function request(httpfunction, path) {
   return httpfunction({
     url: path,
@@ -17,3 +19,6 @@ const getData = async url => {
   }
 }
 getData(url)
+
+exports.request = request;
+exports.getData = getData;
